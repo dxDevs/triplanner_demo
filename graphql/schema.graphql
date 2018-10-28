@@ -1,0 +1,23 @@
+type Destination
+{
+    name: String!
+    country: String!
+}
+
+type Template
+{
+    id: Int!
+    name: String!
+    country: String!
+    price: Int!
+}
+
+type Query {
+    Destinations: [Destination]!
+    Destination(name: String!): Destination!
+    Templates: [Template]!
+    Template(id: Int!): Template!
+}
+
+
+
